@@ -1,3 +1,5 @@
+package Util;
+
 import bean.Person;
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
@@ -10,7 +12,7 @@ import java.util.*;
 
 /**
  * @author smallfish
- * @Title: GoogleGuavaUtil
+ * @Title: Util.GoogleGuavaUtil
  * @ProjectName toolMain
  * @date 18-9-4下午1:34
  */
