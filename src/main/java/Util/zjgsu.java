@@ -17,6 +17,8 @@ import java.io.IOException;
  * @date 18-11-11下午10:27
  */
 public class zjgsu {
+
+    //模拟浙江工商大学教务网的登录 可以适用于需要加载js才能登录的一些网页。 （实际类似于selenium）
     public void login(String userName, String password) throws IOException {
         WebClient webClient = new WebClient(BrowserVersion.CHROME);
         webClient.getOptions().setJavaScriptEnabled(true);
