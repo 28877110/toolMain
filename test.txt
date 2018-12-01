@@ -1,8 +1,0 @@
-world hello ;
-hello world ;
-here is test.txt
-is here test.txt
-这个是个测试文件，用来测试的
-没有别的意思
-哈哈哈哈
-哈哈哈
