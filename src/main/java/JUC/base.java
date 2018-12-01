@@ -37,6 +37,6 @@ public class base {
         a.start();
         System.out.println("b start");
         b.start();
-        System.out.println("funcition end");
+        System.out.println("function end");
     }
 }
