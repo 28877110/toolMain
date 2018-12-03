@@ -8,10 +8,11 @@ package JUC;
  * @createDate 2018/12/01 20:36 <br>
  * @see JUC <br>
  */
-public class base {
+public class baseThread {
     public void createThread() {
         System.out.println("start function");
         Thread a = new Thread("Thread1-a") {
+            @Override
             public void run() {
                 System.out.println(this.getName() + " start");
                 try {
@@ -23,6 +24,7 @@ public class base {
             }
         };
         Thread b = new Thread("Thread2-b") {
+            @Override
             public void run() {
                 System.out.println(this.getName() + " start");
                 try {
