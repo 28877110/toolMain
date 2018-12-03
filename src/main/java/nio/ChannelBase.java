@@ -7,7 +7,7 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class ChannelBasic {
+public class ChannelBase {
     public void fileChannelToBuffer() throws IOException {
         //创建这个文件的目的是为了getChannel()  是为了得到getChannel()
         RandomAccessFile randomAccessFile = new RandomAccessFile("./test.txt", "rw");
