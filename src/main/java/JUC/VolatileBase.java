@@ -7,4 +7,7 @@ package JUC;
  * @date 18-12-3下午7:23
  */
 public class VolatileBase {
+    public void volatileBase(){
+
+    }
 }
