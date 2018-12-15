@@ -16,7 +16,7 @@ import java.util.Map;
 public class DictionaryTree {
     @Data
     class TreeNode{
-        //是否是前缀
+        //是否是前缀 或者字典树
         boolean isWord;
         //单词计数
         int count;
