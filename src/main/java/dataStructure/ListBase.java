@@ -20,16 +20,17 @@ public class ListBase {
 
     //list去重 用stream
     public void removeSame(){
-        List<Person> personList = Lists.newArrayList(new Person("1","xiaohong"),new Person("2","xiaoming"),new Person("3","xiaogang"),new Person("1","xiaohong"));
+        List<Person> personList = Lists.newArrayList(new Person("1","xiaohong",1),new Person("2","xiaoming",1),new Person("3","xiaogang",1),new Person("1","xiaohong",1));
         personList.forEach(System.out::println);
         Long start = System.currentTimeMillis();
         personList = personList.stream().distinct().collect(Collectors.toList());
         System.out.println(System.currentTimeMillis()-start);
         personList.forEach(System.out::println);
     }
+
     //list去重  用第二个list
     public void removeSame2(){
-        List<Person> personList = Lists.newArrayList(new Person("1","xiaohong"),new Person("2","xiaoming"),new Person("3","xiaogang"),new Person("1","xiaohong"));
+        List<Person> personList = Lists.newArrayList(new Person("1","xiaohong",1),new Person("2","xiaoming",1),new Person("3","xiaogang",1),new Person("1","xiaohong",1));
         personList.forEach(System.out::println);
         Long start = System.currentTimeMillis();
         List<Person> result = new ArrayList<>(personList.size());

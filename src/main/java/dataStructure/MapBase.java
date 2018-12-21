@@ -1,7 +1,7 @@
 package dataStructure;
 
 /**
- * <Description> <br>
+ * <Description>map <br>
  *
  * @author smallfish<br>
  * @version 1.0<br>
@@ -9,4 +9,8 @@ package dataStructure;
  * @see dataStructure <br>
  */
 public class MapBase {
+
+    public void keySortMap(){
+
+    }
 }

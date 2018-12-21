@@ -61,9 +61,9 @@ public class GoogleGuavaUtil {
     }
 
     public void CollectionToMap(){
-        Person p1 = new Person("001", "Harry");
-        Person p2 = new Person("002", "Ron");
-        Person p3 = new Person("003","Hermione");
+        Person p1 = new Person("001", "Harry",1);
+        Person p2 = new Person("002", "Ron",1);
+        Person p3 = new Person("003","Hermione",1);
         List<Person> personList = Lists.newArrayList();
         personList.add(p1);
         personList.add(p2);
