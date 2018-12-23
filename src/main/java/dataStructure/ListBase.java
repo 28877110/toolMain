@@ -22,9 +22,10 @@ public class ListBase {
     public void removeSame(){
         List<Person> personList = Lists.newArrayList(new Person("1","xiaohong",1),new Person("2","xiaoming",1),new Person("3","xiaogang",1),new Person("1","xiaohong",1));
         personList.forEach(System.out::println);
-        Long start = System.currentTimeMillis();
+        long start = System.nanoTime();
         personList = personList.stream().distinct().collect(Collectors.toList());
-        System.out.println(System.currentTimeMillis()-start);
+        long end = System.nanoTime();
+        System.out.println(end - start);
         personList.forEach(System.out::println);
     }
 
