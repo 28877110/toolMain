@@ -19,7 +19,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class SystemClock {
     private static final String THREAD_NAME = "system.clock";
     private static final SystemClock MILLIS_CLOCK = new SystemClock(1);
-    //更新频率
+    //准确性
     private final long precision;
     private final AtomicLong now;
 

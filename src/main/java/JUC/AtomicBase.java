@@ -15,5 +15,7 @@ public class AtomicBase {
     public void AtomicTest(){
         atomicLong.incrementAndGet();
         System.out.println(atomicLong);
+        atomicLong.set(12);
+        System.out.println(atomicLong.get());
     }
 }
