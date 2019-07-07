@@ -10,4 +10,5 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class ConcurrentHashMapBase {
     private ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
+
 }
