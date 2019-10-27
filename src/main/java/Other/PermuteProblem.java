@@ -19,7 +19,7 @@ public class PermuteProblem {
         return result;
     }
 
-    public void help(int nums[],int index ,List<List<Integer>> result){
+    private void help(int[] nums, int index, List<List<Integer>> result){
         if(index == nums.length) {
             List<Integer> temp = new ArrayList<>();
             for(int i : nums) {
@@ -35,7 +35,7 @@ public class PermuteProblem {
         }
     }
 
-    public void swap(int num[],int a,int b ){
+    private void swap(int[] num, int a, int b){
         int tem =num[a] ;
         num[a] = num[b];
         num[b] = tem;

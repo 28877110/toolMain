@@ -13,7 +13,7 @@ public class SystemTime {
     public void SystemTime1() throws InterruptedException {
         long startNano = System.nanoTime();
         long startCurrent =System.currentTimeMillis();
-        Thread.currentThread().sleep(1000);
+        Thread.sleep(1000);
         long endNano = System.nanoTime();
         long endCurrent = System.currentTimeMillis();
         System.out.println(endNano - startNano);
