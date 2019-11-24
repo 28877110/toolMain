@@ -4,14 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Person implements Serializable {
-
-    private String Id;
-    private String name;
-    private int success;
+public class OutBean extends Person {
+    private String message;
+    private String outId;
 }
