@@ -1,6 +1,7 @@
 package Util;
 
 import bean.Person;
+import com.google.common.base.CharMatcher;
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import com.google.common.collect.ImmutableMultimap;
@@ -86,5 +87,9 @@ public class GoogleGuavaUtil {
 
     }
 
+    public void counthhh(){
+        int i = CharMatcher.is('@').countIn("dfhkj@hk@@hjkf@@");
+        System.out.println(i);
+    }
 
 }
