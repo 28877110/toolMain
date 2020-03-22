@@ -49,10 +49,4 @@ public class NumberOfDigitOne {
         return cnt;
     }
 
-    public static void main(String[] args) {
-        NumberOfDigitOne numberOfDigitOne = new NumberOfDigitOne();
-        int i = numberOfDigitOne.countDigitOne(222);
-        System.out.println(i);
-    }
-
 }
