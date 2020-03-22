@@ -49,7 +49,6 @@ public class CompressStringLcci {
             return stringBuilder.toString();
         }
         return S;
-
     }
 
 }
