@@ -7,6 +7,7 @@ package org.flyfish.algorithm;
  * @Created by smallfish
  */
 public class ZeroOneMatrix {
+
     public int[][] updateMatrix(int[][] matrix) {
         /**
          *
@@ -27,14 +28,17 @@ public class ZeroOneMatrix {
         int[][] result = new int[width][length];
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < length; j++) {
+                //初始化为最大值 （-1的原因是因为后面有计算会+1） 因为这个问题错了一次。。。。
                 result[i][j] = Integer.MAX_VALUE - 1;
             }
         }
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < length; j++) {
                 if (matrix[i][j] == 0) {
+                    //如果本身为0 则距离为0
                     result[i][j] = 0;
                 } else {
+                    //状态转移方程
                     if (i > 0) {
                         result[i][j] = Math.min(result[i][j], result[i - 1][j] + 1);
                     }
@@ -47,6 +51,7 @@ public class ZeroOneMatrix {
 
         for (int i = width - 1; i >= 0; i--) {
             for (int j = length - 1; j >= 0; j--) {
+                //状态转移方程
                 if (i < width - 1) {
                     result[i][j] = Math.min(result[i][j], result[i + 1][j] + 1);
                 }

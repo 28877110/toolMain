@@ -7,6 +7,7 @@ package org.flyfish.algorithm;
  * @Created by smallfish
  */
 public class FindWordsThatCanBeFormedByCharacters {
+
     public int countCharacters(String[] words, String chars) {
         /**
          *
