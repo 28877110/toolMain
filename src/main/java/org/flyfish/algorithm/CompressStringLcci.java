@@ -52,7 +52,4 @@ public class CompressStringLcci {
 
     }
 
-    public static void main(String[] args) {
-
-    }
 }
