@@ -23,13 +23,14 @@ public class L132Pattern {
         if (nums.length < 3) {
             return false;
         }
+        //这个数组的作用是记录到当前数为止，最小的数
         int[] temmin = new int[nums.length];
-
+        //temmin赋值
         temmin[0] = nums[0];
-
         for (int i = 1; i < nums.length; i++) {
             temmin[i] = Math.min(nums[i], temmin[i - 1]);
         }
+        //132模式是否存在判断
         Stack<Integer> stack = new Stack<>();
         for (int i = nums.length - 1; i >= 0; i--) {
             if (temmin[i] < nums[i]) {
