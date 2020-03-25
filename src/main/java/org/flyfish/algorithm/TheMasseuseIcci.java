@@ -2,7 +2,7 @@ package org.flyfish.algorithm;
 
 /**
  * @Classname TheMasseuseIcci
- * @Description https://leetcode-cn.com/problems/the-masseuse-lcci/submissions/
+ * @Description https://leetcode-cn.com/problems/the-masseuse-lcci/
  * @Date 2020-03-24 09:01
  * @Created by smallfish
  */
@@ -26,7 +26,7 @@ public class TheMasseuseIcci {
         if (nums.length == 1) {
             return nums[0];
         }
-        int tem[] = new int[nums.length];
+        int[] tem = new int[nums.length];
         int temLength = tem.length;
         tem[0] = nums[0];
         tem[1] = nums[0] > nums[1] ? nums[0] : nums[1];
