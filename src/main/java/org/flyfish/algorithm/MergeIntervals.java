@@ -12,6 +12,7 @@ import java.util.List;
  * @Created by smallfish
  */
 public class MergeIntervals {
+
     public int[][] merge(int[][] intervals) {
         /**
          *
@@ -44,8 +45,4 @@ public class MergeIntervals {
         return list.toArray(new int[list.size()][]);
     }
 
-    public static void main(String[] args) {
-        MergeIntervals mergeIntervals = new MergeIntervals();
-        mergeIntervals.merge(new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}});
-    }
 }
