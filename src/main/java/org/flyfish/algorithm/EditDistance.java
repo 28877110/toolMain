@@ -26,15 +26,29 @@ public class EditDistance {
          */
         int result = 0;
 
-        int length = word1.length();
-        int width = word2.length();
+        int length = word1.length() + 1;
+        int width = word2.length() + 1;
         int[][] dp = new int[length][width];
+        dp[0][0] = 0;
         for (int i = 0; i < length; i++) {
-            for (int j = 0; j < width ; j++) {
+            dp[i][0] = i;
+        }
+        for (int j = 0; j < width; j++) {
+            dp[0][j] = j;
+        }
+
+        for (int i = 1; i < length; i++) {
+            for (int j = 1; j < width; j++) {
+                int left = dp[i - 1][j] + 1;
+                int down = dp[i][j - 1] + 1;
+                int left_down = dp[i - 1][j - 1];
+                if (word1.charAt(i - 1) != word2.charAt(j - 1))
+                    left_down += 1;
+                dp[i][j] = Math.min(left, Math.min(down, left_down));
 
             }
         }
-        return result;
+        return dp[length-1][width-1];
     }
 
 }
