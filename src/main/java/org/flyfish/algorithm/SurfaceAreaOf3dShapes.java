@@ -31,14 +31,14 @@ public class SurfaceAreaOf3dShapes {
                 if (grid[i][j] > 0) {
                     for (int k = 0; k < 4; k++) {
                         int tem = 0;
-                        if(i+dir1[k]>=0 && j+dir2[k]>=0 && i+dir1[k]<grid.length && dir2[k]+j <grid.length){
-                            tem = grid[i+dir1[k]][j+dir2[k]];
+                        if (i + dir1[k] >= 0 && j + dir2[k] >= 0 && i + dir1[k] < grid.length && dir2[k] + j < grid.length) {
+                            tem = grid[i + dir1[k]][j + dir2[k]];
                         }
                         //和上下左右相邻的高度差
-                        result+=Math.max(grid[i][j]-tem,0);
+                        result += Math.max(grid[i][j] - tem, 0);
                     }
                     //上下2面
-                    result+=2;
+                    result += 2;
 
                 }
             }
