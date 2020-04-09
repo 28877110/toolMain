@@ -9,10 +9,10 @@ package org.flyfish.Other;
  * @see org.flyfish.Other <br>
  */
 public class SystemTime {
-//    System.nanoTime和System.currentTimeMillis
+    //    System.nanoTime和System.currentTimeMillis
     public void SystemTime1() throws InterruptedException {
         long startNano = System.nanoTime();
-        long startCurrent =System.currentTimeMillis();
+        long startCurrent = System.currentTimeMillis();
         Thread.sleep(1000);
         long endNano = System.nanoTime();
         long endCurrent = System.currentTimeMillis();
