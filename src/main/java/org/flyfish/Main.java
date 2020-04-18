@@ -4,6 +4,7 @@ import org.flyfish.bean.Person;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -11,13 +12,12 @@ import java.util.Optional;
 public class Main {
     public static void main(String[] args) throws Exception {
         Person person = new Person("1", "2", 1);
-        Person person2 = person;
-        person2.setName("222");
-        person2.setName("234");
+        person.setName("222");
+        person.setName("234");
         System.out.println(person);
         System.out.println(RandomStringUtils.random(5));
         String phone = null;
-        Optional<String> phoneOp = Optional.ofNullable(phone);
+        Optional<String> phoneOp = Optional.empty();
         System.out.println(phoneOp.orElse("123"));
 //        Object o = new Object();
 //        int i = CharMatcher.is('@').countIn("dfhk@@@@dfhkj#@");
@@ -47,7 +47,7 @@ public class Main {
 //        String encode = EncodingDetect.getJavaEncode(file);
 //        System.out.println(encode);
 //        Person person = new Person("1", "hello", 1);
-        String s1 = new String("dfhk@@@@dfhk时代峰峻你好吗●◆†¶⊕1234567\"".getBytes("UTF-8"), "UTF-8");
+        String s1 = new String("dfhk@@@@dfhk时代峰峻你好吗●◆†¶⊕1234567\"".getBytes(StandardCharsets.UTF_8), StandardCharsets.UTF_8);
 //        System.out.println(isGBK(s1));
     }
 
