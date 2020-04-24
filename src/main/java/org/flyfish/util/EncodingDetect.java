@@ -1,4 +1,4 @@
-package org.flyfish.Util;
+package org.flyfish.util;
 
 import java.io.BufferedReader;
 import java.io.File;

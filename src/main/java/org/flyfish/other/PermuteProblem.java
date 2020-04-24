@@ -1,4 +1,4 @@
-package org.flyfish.Other;
+package org.flyfish.other;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
  * @author smallfish<br>
  * @version 1.0<br>
  * @createDate 2018/12/24 22:36 <br>
- * @see org.flyfish.Other <br>
+ * @see org.flyfish.other <br>
  */
 public class PermuteProblem {
     public List<List<Integer>> permute(int[] nums) {

@@ -1,4 +1,4 @@
-package org.flyfish.Other;
+package org.flyfish.other;
 
 /**
  * <Description> <br>
@@ -6,7 +6,7 @@ package org.flyfish.Other;
  * @author smallfish<br>
  * @version 1.0<br>
  * @createDate 2018/12/23 20:42 <br>
- * @see org.flyfish.Other <br>
+ * @see org.flyfish.other <br>
  */
 public class SystemTime {
     //    System.nanoTime和System.currentTimeMillis

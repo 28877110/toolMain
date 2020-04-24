@@ -1,4 +1,4 @@
-package org.flyfish.Util;
+package org.flyfish.util;
 
 import jdk.internal.org.xml.sax.helpers.DefaultHandler;
 import org.apache.tika.exception.TikaException;

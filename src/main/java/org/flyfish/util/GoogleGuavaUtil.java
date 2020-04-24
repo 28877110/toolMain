@@ -1,4 +1,4 @@
-package org.flyfish.Util;
+package org.flyfish.util;
 
 import org.flyfish.bean.Person;
 import com.google.common.base.CharMatcher;
@@ -13,7 +13,7 @@ import java.util.*;
 
 /**
  * @author smallfish
- * @Title: org.flyfish.Util.GoogleGuavaUtil
+ * @Title: org.flyfish.util.GoogleGuavaUtil
  * @ProjectName toolMain
  * @date 18-9-4下午1:34
  */

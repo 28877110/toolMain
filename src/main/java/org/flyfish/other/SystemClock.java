@@ -1,4 +1,4 @@
-package org.flyfish.Other;
+package org.flyfish.other;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * @author smallfish<br>
  * @version 1.0<br>
  * @createDate 2018/12/23 20:57 <br>
- * @see org.flyfish.Other <br>
+ * @see org.flyfish.other <br>
  */
 public class SystemClock {
     private static final String THREAD_NAME = "system.clock";

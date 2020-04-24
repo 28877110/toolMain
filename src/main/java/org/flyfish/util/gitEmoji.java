@@ -1,4 +1,4 @@
-package org.flyfish.Util;
+package org.flyfish.util;
 
 /**
  * 之前看到别人的项目里面有出现git emoji 感觉很好玩 <br>
@@ -8,7 +8,7 @@ package org.flyfish.Util;
  * @author smallfish<br>
  * @version 1.0<br>
  * @createDate 2018/12/01 21:47 <br>
- * @see org.flyfish.Util <br>
+ * @see org.flyfish.util <br>
  */
 public class gitEmoji {
     // https://gitmoji.carloscuesta.me/ 具体查看这个

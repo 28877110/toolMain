@@ -1,4 +1,4 @@
-package org.flyfish.Util;
+package org.flyfish.util;
 
 import java.io.UnsupportedEncodingException;
 
@@ -8,7 +8,7 @@ import java.io.UnsupportedEncodingException;
  * @author smallfish<br>
  * @version 1.0<br>
  * @createDate 2018/11/29 16:30 <br>
- * @see org.flyfish.Util <br>
+ * @see org.flyfish.util <br>
  */
 public class CharacterConvert {
 
