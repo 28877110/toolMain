@@ -1,16 +1,51 @@
 package org.flyfish;
 
+import com.alibaba.dubbo.config.ReferenceConfig;
+import org.apache.dubbo.rpc.service.GenericService;
 import org.flyfish.bean.Person;
 import org.apache.commons.lang3.RandomStringUtils;
 
+import java.io.File;
 import java.io.UnsupportedEncodingException;
+import java.lang.ref.Reference;
+import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+
+        String path = "./";
+        File file = new File(path);
+        String targetPath = "./temp";
+        File targetPathFile = new File(targetPath);
+        Files.createDirectories(targetPathFile.toPath());
+        List<Path> collect = Files.walk(file.toPath()).filter(Files::isRegularFile).collect(Collectors.toList());
+        List<Path> collect1 = collect.stream().filter(e -> e.toString().endsWith(".qq")).collect(Collectors.toList());
+        for (Path path1 : collect1) {
+            System.out.println(path1);
+            Files.move(path1,targetPathFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        }
+
+        Map hmap1 = new HashMap();
+        hmap1.put("1","2");
+        hmap1.put(null,null);
+        if(hmap1 instanceof HashMap){
+            HashMap hmap2 = (HashMap)hmap1;
+        }else{
+
+        }
+
+
+        BigDecimal bigDecimal = new BigDecimal("1.23");
+        BigDecimal bigDecimal1 = new BigDecimal("1.23");
+        System.out.println(bigDecimal.compareTo(bigDecimal1));
+
+
         Person person = new Person("1", "2", 1);
         person.setName("222");
         person.setName("234");
