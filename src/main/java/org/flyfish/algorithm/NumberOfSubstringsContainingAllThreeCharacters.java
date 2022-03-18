@@ -39,8 +39,4 @@ public class NumberOfSubstringsContainingAllThreeCharacters {
         return num;
     }
 
-    public static void main(String[] args) {
-        NumberOfSubstringsContainingAllThreeCharacters numberOfSubstringsContainingAllThreeCharacters = new NumberOfSubstringsContainingAllThreeCharacters();
-        System.out.println(numberOfSubstringsContainingAllThreeCharacters.numberOfSubstrings("abcabc"));
-    }
 }
