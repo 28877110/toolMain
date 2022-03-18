@@ -18,7 +18,7 @@ public class CharacterConvert {
     }
 
     public static void main(String[] args) throws Exception {
-        String s1 = new String("dfhk@@@@dfhk时代峰峻你好吗●◆†¶⊕1234567\"".getBytes("UTF-8"),"UTF-8");
+        String s1 = new String("dfhk@@@@dfhk时代峰峻你好吗鱻●◆†¶⊕1234567\"".getBytes("UTF-8"),"UTF-8");
         System.out.println(isGBK(s1));
     }
 
